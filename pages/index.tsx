@@ -1,9 +1,7 @@
 import s from '@/styles/index.module.scss';
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -37,61 +35,27 @@ export default function Home() {
         </div>
 
         <div className={s.grid}>
-          <a
-            href="/"
-            className={s.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Save <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Easily upload and save your&nbsp;memes from anywhere.
-            </p>
+
+          <a href="/" target="_blank" rel="noopener noreferrer" className={s.card}>
+            <h2>Save <span>-&gt;</span></h2>
+            <p>Easily upload and save your memes from anywhere.</p>
           </a>
 
-          <a
-            href="/"
-            className={s.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Store <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Securely store your memes in the&nbsp;cloud for easy access.
-            </p>
+          <a href="/" target="_blank" rel="noopener noreferrer" className={s.card}>
+            <h2>Store <span>-&gt;</span></h2>
+            <p>Securely store your memes in the cloud for easy access.</p>
           </a>
 
-          <a
-            href="/"
-            className={s.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Search <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly find that meme you just can&#39;t remember the name of.
-            </p>
+          <a href="/" target="_blank" rel="noopener noreferrer" className={s.card}>
+            <h2>Search <span>-&gt;</span></h2>
+            <p>Instantly find that meme you just can&#39;t remember the name of.</p>
           </a>
 
-          <a
-            href="/"
-            className={s.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Share <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Share your memes with friends and family with just a tap.
-            </p>
+          <a href="/" target="_blank" rel="noopener noreferrer" className={s.card}>
+            <h2>Share <span>-&gt;</span></h2>
+            <p>Share your memes with friends and family with just a tap.</p>
           </a>
+
         </div>
       </main>
     </>
