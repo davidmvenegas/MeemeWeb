@@ -1,3 +1,3 @@
 # Meeme
 
-[Join Meeme](https://meeme.app/join) to get the latest updates on the Meeme app and the Meeme token.
+[Join Meeme](https://meeme-app.com/join) to start saving, searching, and sharing your favorite memes.
