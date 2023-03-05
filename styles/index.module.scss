@@ -36,18 +36,20 @@
     height: 180px;
     z-index: -1;
   }
-  .logo,
-  .thirteen {
+  .logo_text {
     position: relative;
+    margin-top: 2px;
   }
-  .thirteen {
+  .logo {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75px;
-    height: 75px;
+    color: #ffffff;
+    width: 82.5px;
+    height: 82.5px;
     padding: 25px 10px;
-    margin-left: 16px;
+    margin-left: 32px;
     transform: translateZ(0);
     border-radius: var(--border-radius);
     overflow: hidden;
@@ -89,23 +91,48 @@
   width: var(--max-width);
   max-width: 100%;
   .card {
-    padding: 1rem 1.2rem;
+    padding: 1rem 1.25rem;
     border-radius: var(--border-radius);
     background: rgba(var(--card-rgb), 0);
     border: 1px solid rgba(var(--card-border-rgb), 0);
     transition: all 200ms, border 200ms;
-    span {
-      display: inline-block;
-      transition: transform 200ms;
-    }
     h2 {
+      display: flex;
+      align-items: flex-end;
+      font-size: 2rem;
       font-weight: 600;
       margin-bottom: 0.7rem;
+      .icon_1,
+      .icon_2,
+      .icon_3,
+      .icon_4 {
+        display: inline-block;
+        transition: transform 200ms;
+      }
+      .icon_1 {
+        font-size: 2.25rem;
+        margin-left: 12px;
+        margin-bottom: 3px;
+      }
+      .icon_2 {
+        font-size: 2.25rem;
+        margin-left: 13.5px;
+      }
+      .icon_3 {
+        font-size: 2.125rem;
+        margin-left: 15px;
+        margin-bottom: 3px;
+      }
+      .icon_4 {
+        font-size: 1.925rem;
+        margin-left: 14px;
+        margin-bottom: 3px;
+      }
     }
     p {
       margin: 0;
       opacity: 0.6;
-      font-size: 0.9rem;
+      font-size: 1.05rem;
       line-height: 1.5;
       max-width: 30ch;
     }
@@ -149,28 +176,31 @@
     background: rgba(var(--card-rgb), 0.1);
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
   }
-  .card:hover span {
-    transform: translateX(4px);
+  .card:hover .icon_1,
+  .card:hover .icon_2,
+  .card:hover .icon_3,
+  .card:hover .icon_4 {
+    transform: scale(1.15);
   }
 }
 
 /* Disable animations on reduced motion */
 @media (prefers-reduced-motion) {
-  .thirteen::before {
+  .logo::before {
     animation: none;
   }
-  .card:hover span {
+  .card:hover .icon_1,
+  .card:hover .icon_2,
+  .card:hover .icon_3,
+  .card:hover .icon_4 {
     transform: none;
   }
 }
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-  .logo,
-  .thirteen img {
+  .logo_text,
+  .logo img {
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
   }
 }
