@@ -30,8 +30,8 @@ export default function Home() {
             <Image
               src="/logo.svg"
               alt="Meeme Logo"
-              width={55}
-              height={55}
+              width={52.5}
+              height={52.5}
               priority
             />
           </div>
