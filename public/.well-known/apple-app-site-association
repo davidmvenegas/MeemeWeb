@@ -1,7 +1,9 @@
 {
     "webcredentials": {
-        "apps": [ 
-            "TQ5H7S99UR.com.davidmvenegas.meeme-app"
+        "apps": [
+            "TQ5H7S99UR.com.davidmvenegas.meeme-app",
+            "TQ5H7S99UR.com.davidmvenegas.meeme-app.QA",
+            "TQ5H7S99UR.com.davidmvenegas.meeme-app.Dev"
         ]
     }
 }
